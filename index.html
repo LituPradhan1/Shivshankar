@@ -40,7 +40,7 @@
       display: flex;
       justify-content: center;
       gap: 15px;
-      padding: 10px;
+      padding: 20px;
       flex-wrap: wrap;
     }
 
@@ -131,6 +131,28 @@
       transform: scale(0.98);
     }
 
+    .d-flex::before{
+      content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('backgroundshivshankar.jpg') no-repeat center center/cover;
+            opacity: 0.05;
+            z-index: -1;
+        }
+        .d-flex{
+          position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            padding: 1vw;
+        }
     li {
       padding: 10px 20px;
       border: 1px solid #0000003c;
@@ -189,7 +211,6 @@
     li:hover a {
       color: white !important;
     }
-
   </style>
 </head>
 
@@ -227,7 +248,7 @@
       </div>
     </div>
   </nav>
-  
+
   <div id="home" class="d-flex flex-column justify-content-center align-items-center vh-100 text-center">
     <h1>Welcome to Shivshankar Foundation</h1>
     <p>Leading the way for innovation and social growth in Odisha.</p>
@@ -245,8 +266,8 @@
     <div><img src="./9.jpg" alt="Image 5" /></div>
     <div><img src="./6.jpg" alt="Image 6" /></div>
     <div><img src="./8.jpg" alt="Image 7" /></div>
-   <!-- <div><img src="./2.jpg" alt="Image 8" /></div>  -->
-   <!-- <div><img src="./5.jpg" alt="Image 9" /></div> -->
+    <!-- <div><img src="./2.jpg" alt="Image 8" /></div>  -->
+    <!-- <div><img src="./5.jpg" alt="Image 9" /></div> -->
   </div>
 
   <div id="About" class="container text-center my-5">
@@ -364,7 +385,8 @@
           </div>
           <div class="mb-3">
             <label for="phone" class="form-label">Mobile Number</label>
-            <input type="tel" class="form-control" name="mobile number" id="phone" placeholder="Enter your mobile number" required>
+            <input type="tel" class="form-control" name="mobile number" id="phone"
+              placeholder="Enter your mobile number" required>
           </div>
 
           <!-- Message Field (Added name attribute) -->
@@ -392,7 +414,7 @@
           <p class="small">
             Shivshankar Foundation is dedicated to bringing positive change
             through health, education, and women empowerment initiatives in
-             Odisha.
+            Odisha.
           </p>
         </div>
       </div>
